@@ -254,7 +254,7 @@
                 $(this).prop('title', $(this).data('title'));
             }
 
-            if ($(this).is(':selected')) {
+            if ($(this).attr('data-selected')) {
                 $(this).appendTo(options.parentElement + ' .selected');
             } else {
                 $(this).appendTo(options.parentElement + ' .unselected');
